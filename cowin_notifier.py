@@ -1,6 +1,7 @@
 #! /usr/bin/python3
 import os
 import telegram_send
+import requests
 from datetime import date,datetime
 from time import time,ctime,sleep
 
