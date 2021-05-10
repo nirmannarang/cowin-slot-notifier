@@ -43,7 +43,6 @@ def check_slot():
 	if api_response.status_code == 200:
 		print ("Successful API Fetch")
 		response_json = api_response.json()
-		print(response_json)
 		key_check = "centers"
 		if key_check in response_json:
 			parsed_result = parse_result(response_json)
