@@ -69,5 +69,5 @@ if __name__ == '__main__':
 	while True:
 		diff = datetime.now()-time_now
 		if diff.seconds >= ref_interval:
-			call_api()
+			check_slot()
 			time_now = datetime.now()
