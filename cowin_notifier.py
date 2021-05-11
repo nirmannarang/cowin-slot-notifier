@@ -52,12 +52,13 @@ def check_slot():
 				print('---------------------------')
 				slot_info = ""
 				for center in parsed_result:
+					slot_info = slot_info + "===================\n"
 					slot_info = slot_info + center['name'] + "\n"
 					slot_info = slot_info + "Pin Code:"+ str(center['PINCODE']) + "\n"
 					slot_info = slot_info + "Block:"+center['block_name'] + "\n"
 					slot_info = slot_info + "Vaccine Available:"+str(center['available_capacity']) + "\n"
 					slot_info = slot_info + "Date:"+ center['date'] + "\n"
-					slot_info = slot_info + "-----------------------------------------------------\n"
+					slot_info = slot_info + "===================\n"
 					telegram_send.send(messages = [slot_info])
 			else:
 				print ("No Vaccine Slot Available \n")
